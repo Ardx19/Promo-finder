@@ -1,0 +1,133 @@
+EPISODE NUMBER: Episode 3
+EPISODE LOGLINE: Maya rejects Henry; Victoria burns the will and a figure appears in the smoke.
+CONTINUITY NOTES: Takes place the next day, after the gala.
+
+--- SCRIPT START ---
+
+SCENE 01
+Scene heading: EXT. ASHFORD MANOR GARDEN – DAY
+Scene start: 00:00.00
+Scene end: 00:21.80
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:00.00) | End: (00:04.00)
+Wide shot of rose gardens; Maya walks alone in a simple white dress.
+
+**CAMERA:**
+Start: (00:04.00) | End: (00:07.60)
+Medium shot as Lord Henry hurries after her.
+
+**LORD HENRY (Pleading):**
+Start: (00:04.40) | End: (00:07.20)
+"Maya, wait. I was a fool last night."
+
+**CAMERA:**
+Start: (00:07.60) | End: (00:11.80)
+Close-up as Henry kneels and opens a ring box.
+
+**ACTION:**
+Start: (00:07.80) | End: (00:11.60)
+Henry drops to one knee and offers a diamond ring.
+
+**CAMERA:**
+Start: (00:11.80) | End: (00:15.20)
+Close-up on Maya, unmoved.
+
+**MAYA (Cool):**
+Start: (00:12.10) | End: (00:14.90)
+"You laughed while I bled. Keep your ring."
+
+**CAMERA:**
+Start: (00:15.20) | End: (00:18.20)
+Medium shot as Maya walks away, leaving Henry kneeling.
+
+**CAMERA:**
+Start: (00:18.20) | End: (00:21.80)
+Wide shot of Victoria watching from a window above, jealous.
+
+**VICTORIA (Bitter, Whispering):**
+Start: (00:18.50) | End: (00:21.50)
+"Enjoy it while it lasts, sister."
+
+SCENE 02
+Scene heading: INT. ASHFORD MANOR STUDY – NIGHT
+Scene start: 00:21.80
+Scene end: 00:55.20
+
+Actions and dialogue:
+
+**CAMERA:**
+Start: (00:21.80) | End: (00:25.80)
+Low-angle shot of Victoria slipping into the dark study with a candle.
+
+**ACTION:**
+Start: (00:22.00) | End: (00:25.60)
+Victoria opens the safe and pulls out the original will.
+
+**CAMERA:**
+Start: (00:25.80) | End: (00:29.60)
+Close-up as Victoria holds the will over the candle flame.
+
+**ACTION:**
+Start: (00:26.00) | End: (00:29.40)
+Victoria sets the corner of the will alight.
+
+**CAMERA:**
+Start: (00:29.60) | End: (00:32.80)
+Insert of the paper curling into flames.
+
+**SOUND FX:**
+Start: (00:29.60) | End: (00:32.80)
+Crackle of burning paper.
+
+**CAMERA:**
+Start: (00:32.80) | End: (00:36.80)
+Medium shot as the curtains catch fire.
+
+**ACTION:**
+Start: (00:33.20) | End: (00:36.60)
+Flames leap from the dropped page to the velvet curtains.
+
+**CAMERA:**
+Start: (00:36.80) | End: (00:40.20)
+Wide shot of Victoria fleeing the study.
+
+**SOUND FX:**
+Start: (00:37.40) | End: (00:40.20)
+Fire alarm bell clangs.
+
+**CAMERA:**
+Start: (00:40.20) | End: (00:44.00)
+Tracking shot of Maya running down a smoke-filled corridor.
+
+**MAYA (Desperate, Shouting):**
+Start: (00:40.60) | End: (00:43.20)
+"Grandmother! Where are you?"
+
+**CAMERA:**
+Start: (00:44.00) | End: (00:47.60)
+POV through the smoke: a woman's silhouette at the end of the hall.
+
+**CAMERA:**
+Start: (00:47.60) | End: (00:51.00)
+Close-up on Maya, frozen.
+
+**MAYA (Stunned, Whispering):**
+Start: (00:48.10) | End: (00:49.90)
+"Mother?"
+
+**CAMERA:**
+Start: (00:51.00) | End: (00:54.20)
+Close-up on the silhouette turning away into the smoke.
+
+**SOUND FX:**
+Start: (00:51.20) | End: (00:54.20)
+Strings swell to an unresolved cliffhanger peak.
+
+**CAMERA:**
+Start: (00:54.20) | End: (00:55.20)
+Cut to black.
+
+--- SCRIPT END ---

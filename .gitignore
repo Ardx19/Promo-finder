@@ -1,0 +1,16 @@
+# Kuku input pack and anything derived from it must never be committed (confidential).
+data/
+outputs/
+*.zip
+.cache/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/

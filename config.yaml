@@ -1,0 +1,72 @@
+# Promo Finder configuration. Env vars override the active provider:
+#   LLM_PROVIDER, LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, JUDGE_MODEL, LLM_RPM
+
+provider: gemini-flash-lite        # which preset below is active
+judge_model: null                  # optional: a different model for the cold-viewer judge
+
+providers:
+  gemini-flash-lite:
+    base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+    model: gemini-3.1-flash-lite   # lightest Flash-Lite on AI Studio (2.5-flash-lite is retired); gemini-3.5-flash-lite also works
+    api_key_env: GEMINI_API_KEY
+    rpm: 10                        # free tier ~10-15 RPM, ~500 requests/day
+  groq-gpt-oss:
+    base_url: https://api.groq.com/openai/v1
+    model: openai/gpt-oss-120b
+    api_key_env: GROQ_API_KEY
+    rpm: 25                        # free tier 30 RPM but only ~200K tokens/day
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    model: openai/gpt-oss-120b:free
+    api_key_env: OPENROUTER_API_KEY
+    rpm: 15
+  custom:                          # any OpenAI-compatible endpoint (e.g. one Kuku provides)
+    base_url: null
+    model: null
+    api_key_env: LLM_API_KEY
+    rpm: 30
+
+llm:
+  temperature: 0.3
+  max_retries: 3                   # transport retries (429 / 5xx) with exponential backoff
+  timeout_s: 120
+
+promo:
+  min_duration_s: 20.0
+  max_duration_s: 60.0
+  hook_window_s: 3.0               # hook beat must start within this many seconds of promo start
+  end_tolerance_s: 2.5             # promo must end within this many seconds after the cliffhanger beat ends
+  extend_min_cliff: 3.0            # legacy (fit_length: false): extend a short promo only to a beat with this cliffhanger score
+  # Length fitting (chosen on the tune split, episodes 1 5 11 25 40; scored on held-out 2 9 18 33 50):
+  fit_length: true                 # wrong length -> re-pick the ending: the most unresolved beat that makes it fit
+  fit_target_max_s: 45.0           # when extending a short promo, stay at or under this length
+  fit_min_cliff: 1.0               # the new ending must have at least this cliffhanger score
+  open_on_any_beat: true           # a promo may open on any beat start (nothing plays before frame 1), never mid-line
+  fit_backward: true               # still too short -> open on the strongest earlier hook instead (adds setup)
+  fit_min_hook: 2.5                # ...which must have at least this hook score
+  min_segment_s: 4.0
+  max_segments: 3
+  proposals_per_episode: 4
+  repair: true                     # one extra LLM call per episode that had rejected proposals, with the reasons
+  tail_baseline_s: 45.0
+
+stitch:
+  enabled: true
+  min_cliffhanger: 4               # episode N's ending cliffhanger score needed to try stitching with N+1
+  pickup_phrases: ["picks up", "immediately", "directly from", "continues", "moments after", "right after"]
+
+judge:
+  batch_size: 5
+  min_standalone_stitched: 3       # stitched promos below this are not ranked
+
+rank:
+  weights: {hook: 0.30, cliffhanger: 0.30, standalone: 0.25, appeal: 0.15}
+  position_factors:                # [last_episode_inclusive, factor]
+    - [10, 1.00]
+    - [25, 0.95]
+    - [9999, 0.90]
+  spoiler_penalty: 10
+  top_n: 10
+  max_per_episode_in_top: 2
+  overlap_iou: 0.3
+  post_first: 5
