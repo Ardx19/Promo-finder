@@ -63,7 +63,7 @@ Viewer app: `streamlit run app.py`
 
 | Mode | Needs a key | What it does |
 |---|---|---|
-| `llm` | yes | Show bible (1 call), one call per episode, one repair call per episode that had rejected proposals, stitching calls, and the judge in batches of 5. On the 50-episode pack this was about 130 calls, roughly 460k input tokens and 12–14 minutes on the free tier (10 requests a minute). Cached, so a re-run costs 0 calls. |
+| `llm` | yes | Show bible (1 call), one call per episode, one repair call per episode that had rejected proposals, stitching calls, and the judge in batches of 5. On the 50-episode pack this was about 120 calls, roughly 0.5M input tokens and 12–14 minutes on the free tier (10 requests a minute). Cached, so a re-run costs 0 calls. |
 | `rules` | no | Keyword and emotion-tag heuristics. Instant. Weaker: it can misread tender moments as conflict. |
 | `baseline` | no | The last ~45 s of each episode. Used as the bar the other modes must beat. |
 
