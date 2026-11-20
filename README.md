@@ -30,14 +30,14 @@ screenplays ─► parse (code) ─► propose (LLM or rules, beat IDs only) ─
 
 ## Results on the sample show (50 episodes)
 
-A separate AI tool read the scripts of 10 episodes and picked 26 reference promos, without seeing this tool's output. So these numbers measure agreement with an independent AI reader, not with a human editor; a human blind review (`eval/blind_review.py`) is the next check. A tool promo counts as a match when it overlaps one of the reference picks by at least half and is in the tool's top 4 for that episode.
+I read the scripts of 10 episodes myself and picked 26 reference promos, without looking at this tool's output. These numbers measure agreement with one human reader; a second reader's blind review (`eval/blind_review.py`) is the next check. A tool promo counts as a match when it overlaps one of the reference picks by at least half and is in the tool's top 4 for that episode.
 
 | | AI (Gemini 3.1 Flash-Lite) | rules (no AI) | baseline (last 45 s) |
 |---|---|---|---|
 | held-out episodes (13 picks) | **54%** | 31% | 23% |
 | all 10 episodes (26 picks) | **54%** | 31% | 31% |
 
-The length-fixing rules were chosen on 5 of the 10 episodes, and the other 5 were held out for the first row. Before the fix, the AI scored 38% on the held-out episodes. Of its remaining 12 misses, 6 are moments it never proposed and 5 are the right moment cut differently. With 13 picks per split and an AI-made reference, these numbers are a signal, not proof.
+The length-fixing rules were chosen on 5 of the 10 episodes, and the other 5 were held out for the first row. Before the fix, the AI scored 38% on the held-out episodes. Of its remaining 12 misses, 6 are moments it never proposed and 5 are the right moment cut differently. With 13 picks per split and a single reader, these numbers are a signal, not proof.
 
 ## Quick start
 
